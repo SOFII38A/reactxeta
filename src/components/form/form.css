@@ -1,0 +1,49 @@
+form {
+  display: flex;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px 0  rgb(143, 143, 143);
+  transition: 0.2s ease-in-out;
+  background: rgba(46, 46, 46, 0.842);
+  border: 1.5px solid white;
+  color:white;
+  padding: 1em 2vw;
+  margin: 10px;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  gap: 25px;
+}
+
+@media screen and (max-width: 768px) {  
+  form {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+  }
+}
+
+input {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 2vw;
+  font-size: 18px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+input:hover {
+  border: 1px solid white;
+}
+
+input[type="date"] {
+  color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+
+}

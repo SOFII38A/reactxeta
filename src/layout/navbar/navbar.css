@@ -1,0 +1,38 @@
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  background-color: var(--color-blue);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 120;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+}
+li {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color);
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+li a:hover, li:hover {
+  color: rgba(255, 255, 255, 0.76);
+}

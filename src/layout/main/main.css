@@ -1,0 +1,19 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+h1 {
+  padding-top: 8rem;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,110 @@
+/* TASK CARD */
+.card-task {
+    display: flex;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 0  rgb(143, 143, 143);
+    transition: 0.2s ease-in-out;
+    background: rgba(46, 46, 46, 0.842);
+    border: 1.5px solid white;
+    color:white;
+    padding: 1.5em 2.5vw;
+    align-items: center;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.task-info p, h2, h3 {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {  
+    .card-task {
+        padding: 10px 15px;
+    }
+    .card-task h2 {
+        font-size: 16px;
+    }
+    .task-info {
+        flex-direction: column;
+        align-items: start;
+    }
+    .task-list {
+        flex-direction: row;
+    }
+}
+
+.card-task:hover {
+    box-shadow: 0.1px 5px 10px 0px rgba(143, 143, 143, 0.753);
+    transform:translateY(-4px);
+    border: 1px unset rgb(22, 22, 22)
+}
+
+.div-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+span.check {
+    display: inline-block;
+    position: relative;
+    height: 1.9em;
+    width: 1.9em;
+    border: 3px solid #6473ff;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .3s all;
+}
+
+span.check:hover {
+    background-color: rgba(235, 235, 235, 0.11);
+}
+
+label {
+    display: flex;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+label input:checked ~ span {
+    box-shadow: 1px 1px 2px 0 #6473ff;
+}
+
+span.check:after {
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 0.30em 0.30em 0;
+    transform: rotate(45deg);
+    width: 0.50em;
+    height: 1em;
+    left: 0.6em;
+    top: 0.25em;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+label input:checked ~ span:after {
+    opacity: 1;
+}
+
+/* task LIST */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
